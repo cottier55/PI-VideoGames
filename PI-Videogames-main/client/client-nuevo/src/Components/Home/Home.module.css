@@ -1,6 +1,6 @@
 body {
-    background: cyan;
-}
+    background-color: black;
+  }
 
 .card_grid {
     display: grid;
@@ -28,6 +28,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 .reload_container {

@@ -1,11 +1,27 @@
+@font-face {
+    font-family: "League of Legends";
+    src: url(./../../Tipografia/Friz-Quadrata-Font/Friz\ Quadrata\ Italic.ttf);
+  }
+
+.landing_page {
+    height: 104vh;
+    background-image: url('../../imag/Home/561442.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .landing_title {
-    font-size: 2.5rem;
-    text-shadow: 0 0 30px #d38686, 0 0 30px #d38686, 0 0 30px rgb(241, 129, 65), 0 0 30px rgb(241, 129, 65), 0 0 30px rgb(241, 129, 65), 0 0 30px rgb(241, 129, 65);
+    font-size: 4rem;
+    -webkit-text-stroke: 0.1px #00fff6;
+    color: black;
     word-spacing: 0.1rem;
     margin-top: -2rem;
     padding-top: 3rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    font-family: "League of Legends", Arial, sans-serif;
+};
+
 
 .landing_subtitle {
     text-align: left;
@@ -20,10 +36,10 @@
 }
 
 .landing_button {
-    color: black;
+    color: #00fff6;
     border: 10px rgb(242, 76, 30);
     border-radius: 0.4rem;
-    background-color: rgb(239, 208, 193);
+    background-color: #370067;
     cursor: pointer;
     font-size: 1.4rem;
     font-weight: bolder;
@@ -31,7 +47,7 @@
     text-decoration: none;
     text-align: center;
     opacity: 0.8;
-    font-family: monospace;
+    font-family: "League of Legends", Arial, sans-serif;
 }
 
 .landing_button:hover {

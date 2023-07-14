@@ -16,7 +16,7 @@ function App() {
           <Route path='/videogames' element={<VideoGameCreate />} />
           <Route path='/videogames/:id' element={<Details />} />
         </Routes>
-      </div>
+        </div>
     </BrowserRouter>
   );
 }
