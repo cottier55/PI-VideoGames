@@ -30,14 +30,13 @@ const reducer = (state = initialState, action) => {
                 genres: action.payload
             }
 
-        /*  case INIT_FILTERS:
+             case INIT_FILTERS:
               return {
                   ...state,
                   filter_genre: 'All',
                   filter_created: 'All'
               }
-  */
-        //*** */
+  
         case FILTER_BY_GENRE:
             const allGames = state.allVideogames;
             let genresFiltered = action.payload === 'All' ?

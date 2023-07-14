@@ -2,11 +2,11 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getVideogames, getGenres, getPlatforms, filterVideogamesByGenre, filterCreated, orderByName, orderByRating } from '../../Redux/Action/Action';
-import Card from '../Card/Card';
+import Card from './../Card/Card';
 import styles from './Home.module.css';
-import Nav from '../Nav/Nav';
-import Paginate from '../Paginate/Paginate';
-import Loader from '../Loader/Loader';
+import Navbar from './../Nav/Nav';
+import Paginado from './../Paginate/Paginate';
+import Loader from './../Loader/Loader';
 
 export default function Home() {
 
@@ -21,7 +21,7 @@ export default function Home() {
     const currentVideogames = allVideoGames.slice(indexOfFirstVideogame, indexOfLastVideogame); // guarda todos los VG que tengo en mi pagina actual
     // p1 -- 0 -- 15
     // p2 -- 16 -- 31
-    const ToPaginate = (pageNumber) => {
+    const paginado = (pageNumber) => {
         setCurrentPage(pageNumber);
     }
 
@@ -74,7 +74,7 @@ export default function Home() {
         return (
             <>
                 <div className={styles.create_container}>
-                    <Nav
+                    <Navbar
                         handleSort={handleSort}
                         handleRating={handleRating}
                         handleFilterCreated={handleFilterCreated}
@@ -89,10 +89,10 @@ export default function Home() {
                 </div>
 
                 <div className={styles.pagination}>
-                    <Paginate
+                    <Paginado
                         videogamesPerPage={videogamesPerPage}
                         allVideoGames={allVideoGames.length} // length xq necesito un valor numerico
-                        paginado={ToPaginate}
+                        paginado={paginado}
                         currPage={currentPage}
                     />
                 </div>

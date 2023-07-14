@@ -55,14 +55,14 @@ export function orderByRating(payload) {
         payload
     }
 }
-/*
+
 export function initFilters(payload) {
     return {
         type: INIT_FILTERS,
         payload
     }
 }
-*/
+
 //Buscar videogames por nombre
 export function getVideogameName(name) {
     return async function (dispatch) {

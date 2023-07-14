@@ -1,4 +1,4 @@
-import loading_gif from '../../imag/loading video gif.gif';
+import loading_gif from '../../imag/Loading/ai-loader-opt.gif';
 import styles from './Loader.module.css';
 
 export default function Loader() {

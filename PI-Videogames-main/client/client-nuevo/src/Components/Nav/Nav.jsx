@@ -11,7 +11,7 @@ export default function Nav({ handleFilterGenre, handleFilterCreated, handleRati
     return (
         <div>
             <div>
-                <h1 className={styles.nav_title}>HENRY AWESOME VIDEOGAMES</h1>
+                <h1 className={styles.nav_title}>API VIDEOGAMES</h1>
                 <div className={styles.nav_container}>
                     <Search />
                 </div>
