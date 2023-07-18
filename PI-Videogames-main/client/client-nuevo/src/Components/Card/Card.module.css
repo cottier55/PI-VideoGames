@@ -5,10 +5,10 @@
 
 .card {
     background-color: black;
-  box-shadow: 0 0 10px 5px #370067,
-              0 0 10px 5px #370067,
-              0 0 10px 5px #370067,
-              0 0 10px 5px #370067;
+    box-shadow: 0 0 10px 5px #8400ff,
+                0 0 10px 5px #8400ff,
+                0 0 10px 5px #370067,
+                0 0 10px 5px #370067;
     width: 50 rem;
     height: 25rem;
     background-image: url('./../../imag/Cards/DistantSoggyAlbacoretuna-size_restricted.gif');
@@ -21,6 +21,7 @@
 }
 
 .card_image {
+    cursor: auto;
     border-radius: 10px;
     border:#00fff6 3px solid;
     width: 15rem;
@@ -43,10 +44,12 @@
 
 .card_name {
     text-align: center;
-    color: #00fff6;
-    margin: 0.5rem;
+    margin-top: 1rem;
+    color:#00fff6;
+    text-shadow: 0 0 30px #370067, 0 0 30px #370067, 0 0 30px #7b05e2, 0 0 30px #7b05e2, 0 0 30px #7b05e2, 0 0 30px #7b05e2;
+    margin-top: 0rem;
     font-family: "League of Legends", Arial, sans-serif;;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .card_genre {

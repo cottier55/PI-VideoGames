@@ -121,7 +121,6 @@ export default function VideogameCreate() {
         <>
             <div className={styles.create_home_container} >
                 <Link className={styles.create_home} to={'/home'} >HOME</Link>
-
                 <div className={styles.create_container_form}>
                     <h1 className={styles.create_ready}>Create Videogame</h1>
                     <form className={styles.create_form} onSubmit={(e) => handleSubmit(e)}>

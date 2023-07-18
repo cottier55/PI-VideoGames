@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    cursor: auto;
   }
 
 .card_grid {
@@ -32,18 +33,21 @@ body {
 }
 
 .reload_container {
-    margin-left: 2rem;
+    margin-left: 38rem;
     margin-right: -30rem;
-    margin-top: 1rem;
-    font-family: monospace;
-    font-size: 1rem;
+    margin-top: 2rem;
+    font-family: "League of Legends", Arial, sans-serif;
+    font-size: 1.5rem;
     border-radius: 10px;
-    width: 5rem;
-    height: 2rem;
+    width: 8rem;
+    height: 3rem;
+    background-color: black;
+    color: #00fff6 ;
+    border: #00fff6  3px solid;
 }
 
 .reload_container:hover {
-    border: #d5ad88 3px solid;
+    border: #1eff05  2px solid;
     transform: scale(1.1);
 }
 

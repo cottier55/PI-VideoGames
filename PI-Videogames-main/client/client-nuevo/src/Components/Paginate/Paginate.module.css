@@ -1,28 +1,28 @@
 .pag_pagination {
     list-style-type: none;
-    cursor: pointer;
+    cursor: auto;
 }
 
 .pag_each {
-    border: 1px solid blue;
+    border: 1px solid #00fff6;
     display: inline-block;
-    background-color: rgb(199, 199, 199);
+    background-color: black;
     padding: 2px;
-    font-family: monospace;
+    font-family: "League of Legends", Arial, sans-serif;
     height: 22px;
     width: 20px;
-    color: white;
+    color: #00fff6;
     font-size: 1.1rem;
     border-radius: 6px;
     margin-top: 2rem;
 }
 
 .pag_each:hover {
-    background-color: #f3e0e0;
+    background-color: #8400ff;
 }
 
 span {
-    color: #f3e0e0;
+    color: #00fff6;
     font-size: 1.1rem;
-    font-family: monospace;
+    font-family: "League of Legends", Arial, sans-serif;
 }

@@ -33,7 +33,7 @@ export default function Search() {
                         placeholder='Search Videogame'
                         onChange={(e) => handleInputChange(e)}
                     />
-                    <button className={styles.search_button} type='submit' onClick={(e) => handleSubmit(e)}>🔎</button>
+                    <button className={styles.search_button} type='submit' onClick={(e) => handleSubmit(e)}>Search</button>
                 </div>
             </form>
         </>

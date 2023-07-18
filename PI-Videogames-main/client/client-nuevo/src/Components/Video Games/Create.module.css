@@ -1,41 +1,115 @@
+@font-face {
+    font-family: "League of Legends";
+    src: url(./../../Tipografia/Friz-Quadrata-Font/Friz\ Quadrata\ Italic.ttf);
+  }
+
 .create_ready {
-    color: black;
-    text-shadow: 0 0 30px #d38686, 0 0 30px #d38686, 0 0 30px rgb(241, 129, 65), 0 0 30px rgb(241, 129, 65), 0 0 30px rgb(241, 129, 65), 0 0 30px rgb(241, 129, 65);
+    color:#8400ff;
+    text-shadow: 0 0 30px #0d8000, 0 0 30px #0d8000, 0 0 30px #1eff05, 0 0 30px #1eff05, 0 0 30px #1eff05, 0 0 30px #1eff05;
     font-size: 2.5rem;
-    font-family: monospace;
+    font-family: "League of Legends", Arial, sans-serif;
+    text-align: center;
 }
 
 .create_home_container {
     margin-top: 3rem;
     margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
     justify-content: center;
+    font-family: "League of Legends", Arial, sans-serif;
 }
 
 .create_container_form {
     margin-top: 3rem;
     padding-bottom: 3rem;
     padding-top: 1rem;
-    margin-left: 18rem;
-    margin-right: 18rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
     justify-content: center;
-    background-color: #f3e0e0;
+    background-color: black;
     border-radius: 0.5rem;
+    box-shadow: 0 0 10px 5px #1eff05,
+                0 0 10px 5px #1eff05,
+                0 0 10px 5px #15a705,
+                0 0 10px 5px #15a705;
 }
 
 .create_home {
-    text-decoration: none;
-    color: #d38686;
-    justify-content: center;
-    cursor: pointer;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    font-family: monospace;
-    font-size: 1.7rem;
-}
+    --border-radius: 15px;
+    --border-width: 4px;
+    appearance: none;
+    position: relative;
+    padding: 1em 2em;
+    border: 0;
+    background-color: black;
+    font-family: "League of Legends", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #00fff6;
+    z-index: 2;
+   }
+   
+   .create_home::after {
+    --m-i: linear-gradient(black, black);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(
+           #488cfb,
+           #29dbbc,
+           #ddf505,
+           #ff9f0e,
+           #e440bb,
+           #655adc,
+           #488cfb
+       );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: paused;
+   }
+   
+   .create_home:hover::after {
+    animation-play-state: running;
+   }
+   
+   @keyframes rotate-hue {
+    to {
+     filter: hue-rotate(1turn);
+    }
+   }
+   
+   .create_home::after {
+    box-sizing: border-box;
+   }
+   
+   .create_home:active {
+    --border-width: 5px;
+   }
 
 .create_form {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 6rem;
+    margin-right: 1rem;
+    color: #00fff6;
+
 }
 
 .create_input {
@@ -46,10 +120,14 @@
     list-style: none;
     outline: none;
     border: none;
+    border: 1px solid #00fff6;
+    box-shadow: 0 0 5px 2px #00fff6;
+    font-family: "League of Legends", Arial, sans-serif;
 }
 
 .create_error {
-    color: red;
+    color: #8400ff;;
+    font-family: "League of Legends", Arial, sans-serif;
 }
 
 .create_released_container {
@@ -67,6 +145,10 @@
     border-radius: 0.5rem;
     outline: none;
     border: none;
+    border: 1px solid #00fff6;
+    box-shadow: 0 0 5px 2px #00fff6;
+    color: #00fff6;
+    font-family: "League of Legends", Arial, sans-serif;
 }
 
 .create_rating {
@@ -79,7 +161,10 @@
     border-radius: 0.5rem;
     outline: none;
     border: none;
-    color: black;
+    border: 1px solid #00fff6;
+    box-shadow: 0 0 5px 2px #00fff6;
+    color: #00fff6;
+    font-family: "League of Legends", Arial, sans-serif;
 }
 
 .create_genres_container {
@@ -96,6 +181,10 @@
     width: 17rem;
     height: 2rem;
     border-radius: 0.5rem;
+    border: 1px solid #00fff6;
+    box-shadow: 0 0 5px 2px #00fff6;
+    color: #00fff6;
+    font-family: "League of Legends", Arial, sans-serif;
 }
 
 .create_platforms_container {
@@ -112,67 +201,77 @@
     width: 16rem;
     height: 2rem;
     border-radius: 0.5rem;
-    color: black;
+    border: 1px solid #00fff6;
+    box-shadow: 0 0 5px 2px #00fff6;
+    color: #00fff6;
+    font-family: "League of Legends", Arial, sans-serif;
 }
 
 .create {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-left: 5rem;
     justify-content: center;
-    width: 7rem;
+    width: 9rem;
     height: 3rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     outline: none;
     border: 3px solid;
-    border-color: rgb(2, 2, 56);
-    background-color: rgb(2, 2, 56);
-    color: white;
+    border-color: #8400ff;
+    background-color: black;
+    color: #8400ff;
     cursor: pointer;
     font-size: 1.4rem;
     font-weight: bolder;
-    font-family: monospace;
+    font-family: "League of Legends", Arial, sans-serif;;
 }
 
 .create:hover {
-    color: #d38686;
+    color: #1eff05;
 }
 
 .create_x_genre_container {
     margin-top: 2rem;
-    margin-left: 30rem;
+    margin-left: 13rem;
     justify-content: center;
     width: 20rem;
+    font-family: "League of Legends", Arial, sans-serif;
 }
 
 .create_x_genre {
     margin-right: 1rem;
+    color: #1eff05;
+    font-size: 1.3rem;
 
 }
 
 .create_x_genre_buttom {
     border-radius: 0.3rem;
-    color: red;
-    background-color: transparent;
-    outline: none;
-    border: none;
+    border: 1px solid #00fff6;
+    box-shadow: 0 0 5px 2px #00fff6;
+    color: #00fff6;
+    font-size: -1rem;
     cursor: pointer;
 }
 
 .create_x_platform_container {
     margin-top: 2rem;
-    margin-left: 30rem;
+    margin-left: 13rem;
     justify-content: center;
     width: 20rem;
+    font-family: "League of Legends", Arial, sans-serif;
 }
 
 .create_x_platform {
     margin-right: 1rem;
+    color: #1eff05;
+    font-size: 1.3rem;
 }
 
 .create_x_platform_buttom {
     border-radius: 0.3rem;
-    color: red;
-    background-color: transparent;
-    outline: none;
-    border: none;
+    border: 1px solid #00fff6;
+    box-shadow: 0 0 5px 2px #00fff6;
+    color: #00fff6;
+    font-size: -1rem;
     cursor: pointer;
 }
