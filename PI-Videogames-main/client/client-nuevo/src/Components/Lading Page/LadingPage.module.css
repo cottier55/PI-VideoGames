@@ -5,7 +5,7 @@
 
 .landing_page {
     height: 104vh;
-    background-image: url('../../imag/Home/561442.jpg');
+    background-image: url('../../imag/Home/tumblr_oqhkz2tCqI1qbw2q1o1_1280.gif');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -37,7 +37,7 @@
 
 .landing_button {
     color: #00fff6;
-    border: 10px rgb(242, 76, 30);
+    border: 10px rgb(48, 11, 150);
     border-radius: 0.4rem;
     background-color: #370067;
     cursor: pointer;
@@ -48,6 +48,8 @@
     text-align: center;
     opacity: 0.8;
     font-family: "League of Legends", Arial, sans-serif;
+    margin-left: 31.5rem;
+    margin-top: 4rem;
 
 }
 

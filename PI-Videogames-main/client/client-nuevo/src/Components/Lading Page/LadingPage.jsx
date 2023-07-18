@@ -6,11 +6,7 @@ export default function LandingPage() {
     return (
         <div className={styles.landing_page}>
             <div>
-                <h1 className={styles.landing_title}>PI VIDEOGAMES</h1>
-                <h2 className={styles.landing_subtitle}>
-                    If you are looking for videogames, you are in the right place...
-                    <br />
-                    You can also create new videogames!</h2>
+                <h1 className={styles.landing_title}>VIDEOGAMES</h1>
 
                 <Link to='/home'>
                     <button className={styles.landing_button}>ENTER</button>
